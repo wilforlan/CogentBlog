@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {% block head %}
+  <link rel="stylesheet" href="/static/css/bootstrap.min.css" />
+  <title>
+    {% block title %}
+    {% endblock %} - First Lesson
+  </title>
+    {% endblock %}
+</head>
+<body>
+  {{ include('partials/headers.html')}}
+  <div id="container">
+    {% block content %}
+
+    {% endblock %}
+  </div>
+  <!-- <div id="footer">
+    {% block footer %}
+    &copy; Copyright 2011 by <a href="http://domain.invalid/">Cogent Tutorial</a>.
+    {% endblock %}
+  </div> -->
+</body>
+
+
+</html>
